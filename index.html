@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligência Artificial - Jogo Interativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Inteligência Artificial</h1>
+            <p class="subtitle">Aprenda sobre IA completando as frases!</p>
+        </header>
+
+        <main>
+            <section class="game-section">
+                <h2>Desafio: Complete as Frases</h2>
+                <p class="instructions">Arraste as palavras para os espaços em branco para completar as frases sobre Inteligência Artificial.</p>
+
+                <!-- Questão 1 -->
+                <div class="question-card">
+                    <h3>Questão 1</h3>
+                    <p class="phrase">
+                        A inteligência artificial é a capacidade de máquinas em simular 
+                        <span class="blank" data-answer="inteligência">___________</span> 
+                        humana e executar tarefas de forma autônoma.
+                    </p>
+                </div>
+
+                <!-- Questão 2 -->
+                <div class="question-card">
+                    <h3>Questão 2</h3>
+                    <p class="phrase">
+                        O 
+                        <span class="blank" data-answer="aprendizado">___________</span> 
+                        de máquina é um subcampo da IA que permite aos computadores aprender com dados sem serem explicitamente programados.
+                    </p>
+                </div>
+
+                <!-- Questão 3 -->
+                <div class="question-card">
+                    <h3>Questão 3</h3>
+                    <p class="phrase">
+                        As 
+                        <span class="blank" data-answer="redes">___________</span> 
+                        neurais são inspiradas no funcionamento do cérebro humano e são fundamentais no aprendizado profundo.
+                    </p>
+                </div>
+
+                <!-- Questão 4 -->
+                <div class="question-card">
+                    <h3>Questão 4</h3>
+                    <p class="phrase">
+                        O processamento de 
+                        <span class="blank" data-answer="linguagem">___________</span> 
+                        natural permite que máquinas entendam e gerem texto de forma similar aos humanos.
+                    </p>
+                </div>
+
+                <!-- Questão 5 -->
+                <div class="question-card">
+                    <h3>Questão 5</h3>
+                    <p class="phrase">
+                        A IA é utilizada em diversos campos como medicina, 
+                        <span class="blank" data-answer="finanças">___________</span>, 
+                        educação e automação industrial.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Palavras para arrastar -->
+            <section class="words-section">
+                <h3>Palavras Disponíveis:</h3>
+                <div class="words-container" id="wordsContainer">
+                    <div class="word-item" draggable="true">inteligência</div>
+                    <div class="word-item" draggable="true">aprendizado</div>
+                    <div class="word-item" draggable="true">redes</div>
+                    <div class="word-item" draggable="true">linguagem</div>
+                    <div class="word-item" draggable="true">finanças</div>
+                </div>
+            </section>
+
+            <!-- Botões de ação -->
+            <section class="actions-section">
+                <button id="checkBtn" class="btn btn-primary">Verificar Respostas</button>
+                <button id="resetBtn" class="btn btn-secondary">Recomeçar</button>
+            </section>
+
+            <!-- Resultado -->
+            <div id="resultMessage" class="result-message"></div>
+        </main>
+
+        <footer>
+            <p>Aprenda mais sobre Inteligência Artificial e seus aplicações no mundo moderno.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
